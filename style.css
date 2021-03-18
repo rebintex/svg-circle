@@ -26,15 +26,30 @@ svg {
     stroke-linecap: round;
 }
 
+
 .green {
     stroke-width: 1;
     stroke: #70a84b;
     fill: none;
-    stroke-dasharray: 91;
+    stroke-dasharray: 62;
     stroke-dashoffset: 138%;
     transform: rotate(31deg);
     transform-origin: center;
     stroke-linecap: round;
+
+    animation-name: green-circle;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes green-circle {
+    0% {
+        stroke-dasharray: 62;
+    }
+   
+    100% {
+        stroke-dasharray: 91;
+    }
 }
 
 .yellow {
@@ -46,6 +61,20 @@ svg {
     transform: rotate(-70deg);
     transform-origin: center;
     stroke-linecap: round;
+
+    animation-name: yellow-circle;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes yellow-circle {
+    0% {
+        stroke-dasharray: 62;
+    }
+   
+    100% {
+        stroke-dasharray: 91;
+    }
 }
 .flag {
 transform: translate(33%, 11%);
